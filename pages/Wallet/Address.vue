@@ -61,7 +61,7 @@
                                                 <p><span>0.0000 BTC</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 BTC</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/btc.d9c1768c.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/btc.d9c1768c.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                                                 <p><span>0.0000 ETH</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 ETH</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/eth.73579dcc.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/eth.73579dcc.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@
                                                 <p><span>0.0000 USDT</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 USDT</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/usdt.bb4ee7f0.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/usdt.bb4ee7f0.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@
                                                 <p><span>0.0000 XRP</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 XRP</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/xrp.6684b41b.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/xrp.6684b41b.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@
                                                 <p><span>0.0000 TRX</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 TRX</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/trx.457af50e.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/trx.457af50e.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                                                 <p><span>0.0000 EOS</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 EOS</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/eos.5929c6f7.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/eos.5929c6f7.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@
                                                 <p><span>0.0000 BNB</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 BNB</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/bnb.ca6e0b5b.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/bnb.ca6e0b5b.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@
                                                 <p><span>0.0000 HIVE</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 HIVE</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/hive.8f806023.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/hive.8f806023.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -181,7 +181,7 @@
                                                 <p><span>0.0000 STEEM</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 STEEM</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/steem.543d2664.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/steem.543d2664.png"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -193,7 +193,7 @@
                                                 <p><span>0.0000 DOGE</span></p><small class="text-muted">Total Received</small><br>
                                                 <p><span>0 DOGE</span></p>
                                             </div>
-                                            <div class="three wide column"><img class="w-100" src="/static/media/doge.9f41f6a8.png"></div>
+                                            <div class="three wide column"><img class="w-100" src="~/static/media/doge.9f41f6a8.png"></div>
                                         </div>
                                     </div>
                                 </div>
