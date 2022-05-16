@@ -69,5 +69,17 @@ export default {
 
   router: {
     // customize the Nuxt router
+    routes: [
+      {
+        name: 'index',
+        path: '/',
+        component: 'pages/index.vue'
+      },
+      {
+        name: 'accounts',
+        path: '/users/:id?',
+        component: 'pages/users/_id.vue'
+      },
+    ]
   }
 }

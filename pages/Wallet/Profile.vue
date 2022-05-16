@@ -1,5 +1,6 @@
 <template>
     <div>
+        <client-only placeholder="loading...">
         <div style="overflow-x: hidden;">
             <div class="nav-top">
                 <div class="ui grid l-r-pad">
@@ -39,29 +40,27 @@
                     <div class="ui grid container">
                         <div class="thirteen wide column" style="padding-top: 0px; padding-bottom: 0px;">
                             <div class="ui secondary pointing menu" style="justify-content: space-between">
-                                <nuxt-link class="item " to="Overview"><i class="th icon"></i>Overview</nuxt-link>
-                                <nuxt-link class="item " to="Address"><i class="qrcode icon"></i>Addresses</nuxt-link>
-                                <nuxt-link class="item " to="Transactions"><i class="tasks icon"></i>Transactions</nuxt-link>
-                            <!-----    <nuxt-link class="item " to="Savings"><i class="percent icon"></i>Savings</nuxt-link>
-                                <nuxt-link class="item " to="nfts"><i class="file audio icon"></i>NFTS</nuxt-link>
-                                <nuxt-link class="item " to="payment"><i class="chain icon"></i>Payment Links</nuxt-link> --->
-                                <nuxt-link class="item " to="settings"><i class="cog icon"></i>Settings</nuxt-link>
-                                <nuxt-link class="item " to="security"><i class="shield alternate icon"></i>Security</nuxt-link>
+                                <nuxt-link class="item " to="Wallet/Overview"><i class="th icon"></i>Overview</nuxt-link>
+                                <nuxt-link class="item " to="Wallet/Address"><i class="qrcode icon"></i>Addresses</nuxt-link>
+                                <nuxt-link class="item " to="Wallet/Transactions"><i class="tasks icon"></i>Transactions</nuxt-link>
+                            <!-----    <nuxt-link class="item " to="Wallet/Savings"><i class="percent icon"></i>Savings</nuxt-link>
+                                <nuxt-link class="item " to="Wallet/nfts"><i class="file audio icon"></i>NFTS</nuxt-link>
+                                <nuxt-link class="item " to="Wallet/payment"><i class="chain icon"></i>Payment Links</nuxt-link> --->
+                                <nuxt-link class="item " to="Wallet/settings"><i class="cog icon"></i>Settings</nuxt-link>
+                                <nuxt-link class="item " to="Wallet/security"><i class="shield alternate icon"></i>Security</nuxt-link>
                 </div>
                         </div>
                         <div class="three wide column hidden-m">
                            <p style="text-align: center; color: rgb(52, 152, 219); background-color: rgba(52, 152, 219, 0.1); padding: 5px; font-size: 0.8em; border-radius: 5px;">
-                    <nuxt-link to="deposit"> <i class="text-blue icon help circle"></i> Deposit peer?</nuxt-link>
+                    <nuxt-link to="Wallet/deposit"> <i class="text-blue icon help circle"></i> Deposit peer?</nuxt-link>
                     </p>
                         </div>
                     </div>
                 </div>
-               
                 <div class="wallet-wrapper">
                     <div class="ui three column doubling stackable grid container">
                         <div class="four wide column">
-                            <div class="ui card w-100">
-                                <div class="ui large vertical menu w-100 settings" style="border: none; box-shadow: none; margin-bottom: 0px;">
+                            <div class="ui large vertical menu w-100 settings" style="border: none; box-shadow: none; margin-bottom: 0px;">
                                     <nuxt-link to="Profile" class="item zero-t-b-p active"> 
                                         <div class="ui double column grid">
                                             <div class="two wide column"><i class="icon address card outline"></i></div>
@@ -95,7 +94,6 @@
                                     </nuxt-link>
 
                                 </div>
-                            </div>
                         </div>
                         
                         <div class="twelve wide column p-l-0">
@@ -155,31 +153,31 @@
                     <div class="ui grid container">
                         <div class="sixteen wide column" style="padding-top: 0px; padding-bottom: 0px;">
                             <div class="ui secondary pointing menu" style="justify-content: space-between"> 
-                                  <nuxt-link class="item" to="Overview">
+                                  <nuxt-link class="item" to="Wallet/Overview">
                                     <div class="text-center w-100"><i class="th icon"></i>
                                             <p>Overview</p>
                                         </div>
                                     </nuxt-link>
                                     
-                                <nuxt-link class="item " to="Address">
+                                <nuxt-link class="item " to="Wallet/Address">
                                     <div class="text-center w-100"><i class="qrcode icon"></i>
                                         <p>Wallets</p>
                                     </div>
                                 </nuxt-link>
 
-                           <!-----     <nuxt-link class="item " to="Savings">
+                           <!-----     <nuxt-link class="item " to="Wallet/Savings">
                                     <div class="text-center w-100"><i class="dollar sign icon"></i>
                                         <p style="margin-bottom: 0px;">Savings</p>
                                     </div>
                                 </nuxt-link>
 
-                                <nuxt-link class="item " to="nfts">
+                                <nuxt-link class="item " to="Wallet/nfts">
                                     <div class="text-center w-100"><i class="file audio icon"></i>
                                         <p style="margin-bottom: 0px;">NFTs</p>
                                     </div>
                                 </nuxt-link> -->
                                 
-                                <nuxt-link class="item " to="Transactions">
+                                <nuxt-link class="item " to="Wallet/Transactions">
                                     <div class="text-center w-100"><i class="tasks icon"></i>
                                         <p>Transactions</p>
                                     </div>
@@ -190,8 +188,8 @@
                 </div>
             </div>
         </div>
-        <a id="gotosettings" href="settings/profile"></a>
-        
+        <a id="gotosettings" href="/wallet/settings/profile"></a>
+        </client-only>
     </div>
 </template>
 

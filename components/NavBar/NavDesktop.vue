@@ -2,12 +2,12 @@
   <div>
       <div role="listbox" v-bind:class="{ isActive,  visible}" :aria-expanded="{aria}" class="ui dropdown hidden-m" tabindex="0">
                                     <div class="text" role="alert" aria-live="polite"></div>
-                                    <i @click="openNav" aria-hidden="true" class="bars icon"></i>
-                                    <div v-bind:class="{ visible}" class="menu transition">
-                                        <a @click="closeNav" class="closebtn" style="font-size: 1.4em; padding:30%; margin: 30%; text-align:right; pointer: cursor;">X</a>
+                                    <i @click="openNav"  aria-hidden="true" class="bars icon"></i>
+                                    <div v-bind:class="{ visible}" @click="closeNav" class="menu transition">
+                                        <a  class="closebtn" style=" pointer: cursor;"></a>
                                         <div class="ui grid">
                                             <div class="sixteen wide column">
-                                                <img class="user-icon item logo-item" src="~/assets/img/user.png" style="border-radius: 50%; margin: 0px auto; padding: 0px;">
+                                                <img  class="user-icon item logo-item" src="~/assets/img/user.png" style="border-radius: 50%; margin: 0px auto; padding: 0px;">
                                                 <div class="text-center"><span style="color: darkgray;">Roqqu user</span>
                                                     <h2 class="text-blue" style="margin-top: 0px; font-weight: 500;"><span>NGN 0</span></h2>
                                                 </div>
@@ -50,6 +50,7 @@ export default {
             this.$data.isActive = true
             this.$data.visible = true
             this.$data.aria = true
+            this.$emit('close');
 
             console.log('Success')
         },

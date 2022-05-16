@@ -39,13 +39,13 @@
                 <div class="wallet-navbar hidden-m">
                     <div class="ui grid container">
                         <div class="thirteen wide column" style="padding-top: 0px; padding-bottom: 0px;">
-                            <div class="ui secondary pointing menu">
+                            <div class="ui secondary pointing menu" style="justify-content: space-between">
                                 <nuxt-link class="item " to="Wallet/Overview"><i class="th icon"></i>Overview</nuxt-link>
                                 <nuxt-link class="item " to="Wallet/Address"><i class="qrcode icon"></i>Addresses</nuxt-link>
                                 <nuxt-link class="item " to="Wallet/Transactions"><i class="tasks icon"></i>Transactions</nuxt-link>
-                                <nuxt-link class="item " to="Wallet/Savings"><i class="percent icon"></i>Savings</nuxt-link>
+                            <!-----    <nuxt-link class="item " to="Wallet/Savings"><i class="percent icon"></i>Savings</nuxt-link>
                                 <nuxt-link class="item " to="Wallet/nfts"><i class="file audio icon"></i>NFTS</nuxt-link>
-                                <nuxt-link class="item " to="Wallet/payment"><i class="chain icon"></i>Payment Links</nuxt-link>
+                                <nuxt-link class="item " to="Wallet/payment"><i class="chain icon"></i>Payment Links</nuxt-link> --->
                                 <nuxt-link class="item " to="Wallet/settings"><i class="cog icon"></i>Settings</nuxt-link>
                                 <nuxt-link class="item " to="Wallet/security"><i class="shield alternate icon"></i>Security</nuxt-link>
                 </div>
@@ -57,12 +57,13 @@
                         </div>
                     </div>
                 </div>
+               
                 <div class="wallet-wrapper">
                     <div class="ui three column doubling stackable grid container">
                         <div class="four wide column">
                             <div class="ui card w-100">
                                 <div class="ui large vertical menu w-100 settings" style="border: none; box-shadow: none; margin-bottom: 0px;">
-                                    <nuxt-link to="" class="item zero-t-b-p active"> 
+                                    <nuxt-link to="Wallet/Profile" class="item zero-t-b-p active"> 
                                         <div class="ui double column grid">
                                             <div class="two wide column"><i class="icon address card outline"></i></div>
                                           <div class="twelve wide column"><span class="font-bold" style="padding-bottom: 5px; display: block;">Profile</span><small class="text-muted">Manage your profile details</small></div>
@@ -70,15 +71,15 @@
                                         </div>
                                     </nuxt-link>
 
-                                    <router-link to="/Wallet/Settings/Accounts" class="item zero-t-b-p active"> 
+                                    <nuxt-link to="Wallet/Accounts" class="item zero-t-b-p active"> 
                                         <div class="ui double column grid">
                                             <div class="two wide column"><i class="icon university"></i></div>
                                             <div class="twelve wide column"><span class="font-bold" style="padding-bottom: 5px; display: block;">Accounts</span><small class="text-muted">Add and remove banking accounts</small></div>
                                             <div class="two wide column"><i class="icon chevron right floated"></i></div>
                                         </div>
-                                    </router-link>
+                                    </nuxt-link>
 
-                                    <nuxt-link to="" class="item zero-t-b-p active"> 
+                                    <nuxt-link to="Wallet/Verification" class="item zero-t-b-p active"> 
                                         <div class="ui double column grid">
                                             <div class="two wide column"><i class="icon check circle"></i></div>
                                             <div class="twelve wide column"><span class="font-bold" style="padding-bottom: 5px; display: block;">Verification</span><small class="text-muted">Submit your documents to lift limits</small></div>
@@ -86,7 +87,7 @@
                                         </div>
                                     </nuxt-link>
 
-                                    <nuxt-link to="" class="item zero-t-b-p active"> 
+                                    <nuxt-link to="security" class="item zero-t-b-p active"> 
                                         <div class="ui double column grid">
                                             <div class="two wide column"><i class="shield alternate icon"></i></div>
                                             <div class="twelve wide column"><span class="font-bold" style="padding-bottom: 5px; display: block;">Security Center</span><small class="text-muted">Protect your roqqu account</small></div>
@@ -112,7 +113,7 @@
                                         <div class="ui large vertical menu w-100" style="display: none; border: none; box-shadow: none; margin-bottom: 0px;"><a class="item" style="padding: 0px;"></a></div>
                                         <div class="content" style="padding-top: 8px;">
                                             <div class="ui grid">
-                                                <div class="two wide computer four wide mobile column"><img class="w-100 item logo-item" src="/static/media/user-icon.471a1ad3.png" style="margin: 5px auto; padding: 0px; border-radius: 50%;"></div>
+                                                <div class="two wide computer four wide mobile column"><img class="w-100 item logo-item" src="~/static/media/user-icon.471a1ad3.png" style="margin: 5px auto; padding: 0px; border-radius: 50%;"></div>
                                                 <div class="six wide computer twelve wide mobile column" style="border-right: 1px solid rgb(238, 238, 238);">
                                                     <p style="margin-top: 5px; margin-bottom: 0px;">Change profile image</p><small class="text-muted">Max file size of 1mb, preferably a 1X1 image</small><br><label for="uploadCaptureInputFile" title="Upload image" class="ui button" style="padding: 7px; font-size: 11px; margin-top: 5px;">Upload</label><input hidden="" type="file" id="uploadCaptureInputFile" class="inputfile">
                                                 </div>
@@ -154,7 +155,7 @@
                 <div class="menu-bar desktop-remove">
                     <div class="ui grid container">
                         <div class="sixteen wide column" style="padding-top: 0px; padding-bottom: 0px;">
-                            <div class="ui secondary pointing menu"> 
+                            <div class="ui secondary pointing menu" style="justify-content: space-between"> 
                                   <nuxt-link class="item" to="Wallet/Overview">
                                     <div class="text-center w-100"><i class="th icon"></i>
                                             <p>Overview</p>
@@ -167,7 +168,7 @@
                                     </div>
                                 </nuxt-link>
 
-                                <nuxt-link class="item " to="Wallet/Savings">
+                           <!-----     <nuxt-link class="item " to="Wallet/Savings">
                                     <div class="text-center w-100"><i class="dollar sign icon"></i>
                                         <p style="margin-bottom: 0px;">Savings</p>
                                     </div>
@@ -177,7 +178,7 @@
                                     <div class="text-center w-100"><i class="file audio icon"></i>
                                         <p style="margin-bottom: 0px;">NFTs</p>
                                     </div>
-                                </nuxt-link>
+                                </nuxt-link> -->
                                 
                                 <nuxt-link class="item " to="Wallet/Transactions">
                                     <div class="text-center w-100"><i class="tasks icon"></i>
@@ -189,7 +190,8 @@
                     </div>
                 </div>
             </div>
-        </div><a id="gotosettings" href="/wallet/settings/profile"></a>
+        </div>
+        <a id="gotosettings" href="/wallet/settings/profile"></a>
         </client-only>
     </div>
 </template>
@@ -198,10 +200,25 @@
 import NavMobile from "@/components/NavBar/NavMobile";
 import NavDesktop from "@/components/NavBar/NavDesktop";
 
+
 export default{
     components: {
         NavMobile,
-        NavDesktop
+        NavDesktop,
+    },
+    data() {
+      return {
+        isModalVisible: false,
+      };
+    },
+    methods: {
+      showModal() {
+        this.isModalVisible = true;
+        console.log('clicked')
+      },
+      closeModal() {
+        this.isModalVisible = false;
+      }
     }
 }
 </script>
